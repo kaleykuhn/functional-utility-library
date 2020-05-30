@@ -24,3 +24,14 @@ function removeElemSlice(beginSlice, endSlice) {
    var slicedArr = array.slice(beginSlice, endSlice);
    return slicedArr;
 }
+//Combine two arrays using concat method
+var first = [1, 2, 3];
+var second = [4, 5];
+//A1: array
+//A2: array
+//R : combined array
+function concatArr(array1, array2) {
+   var conArr = array1.concat(array2);
+   console.log(conArr);
+   return conArr;
+}
