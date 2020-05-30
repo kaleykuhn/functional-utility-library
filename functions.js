@@ -35,3 +35,15 @@ function concatArr(array1, array2) {
    console.log(conArr);
    return conArr;
 }
+// Add Elements to the End of an Array using concat
+var first = [1, 2, 3];
+var second = [4, 5];
+//non mutating
+// A1: array
+// A2: element
+// R: array with element added to end
+function concatToEndArray(arr1, ele) {
+   var conArrEnd = arr1.concat(ele);
+   console.log(conArrEnd);
+   return conArrEnd;
+}
