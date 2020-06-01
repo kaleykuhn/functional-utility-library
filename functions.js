@@ -47,8 +47,37 @@ function concatToEndArray(arr1, ele) {
    console.log(conArrEnd);
    return conArrEnd;
 }
-
-//function useReduceMethodAnaData(,) {}
+//Use higher order functions to solve complex problem
+// We want to return a new array that has only positive integers and we want to square those integers in array at end
+// first we use the filter method on the numbers and Number.isInteger to find if that num is an integer and add to new array
+//Then we want only the positive numbers left so we filter out anything that isnt 0 or above.
+// With that new array then we want to multipy the numbers by themselves to get our return.
+// A1: array
+// R: new array
+var squareList = [4, 5.6, -9.8, 3.14, 42, 6, 8.34, -2];
+function useHigherOrderFunc(arr) {
+   let allInt = arr.filter((num) => {
+      if (Number.isInteger(num) === true) {
+         return true;
+      } else {
+         return false;
+      }
+   });
+   console.log(allInt);
+   let allIntPos = allInt.filter((num) => {
+      if (num >= 0) {
+         return true;
+      } else {
+         return false;
+      }
+   });
+   console.log(allIntPos);
+   let squareList = allIntPos.map((num) => {
+      return num * num;
+   });
+   console.log(squareList);
+   return squareList;
+}
 
 //Sort an Array Alphabetically
 //A: callback function alphabetical Order is used for array sort
