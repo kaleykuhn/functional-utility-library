@@ -80,6 +80,9 @@ function useHigherOrderFunc(arr) {
 }
 
 // Use reduce Method to analyze Data
+// first we filter out the pos numbers to new arr
+// then we use reduce
+// then we use reduce to output difference between new array num
 // A1: array
 // R : number
 function reduceMethAnaData(arr) {
