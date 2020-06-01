@@ -79,6 +79,15 @@ function useHigherOrderFunc(arr) {
    return squareList;
 }
 
+// Use reduce Method to analyze Data
+// A1: array
+// R : number
+function reduceMethAnaData(arr) {
+   let newArr = arr
+      .filter((num) => num < 0)
+      .reduce((arrSub, num) => arrSub - num);
+   return newArr;
+}
 //Sort an Array Alphabetically
 //A: callback function alphabetical Order is used for array sort
 //R: The elements return in alphabetical order
