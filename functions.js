@@ -55,7 +55,7 @@ function concatToEndArray(arr1, ele) {
 // A1: array
 // R: new array
 var squareList = [4, 5.6, -9.8, 3.14, 42, 6, 8.34, -2];
-function useHigherOrderFunc(arr) {
+function useHigherOrderFun(arr) {
    let allInt = arr.filter((num) => {
       if (Number.isInteger(num) === true) {
          return true;
