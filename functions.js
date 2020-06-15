@@ -95,7 +95,7 @@ function reduceMethAnaData(arr) {
 //A: callback function alphabetical Order is used for array sort
 //R: The elements return in alphabetical order
 var letterArr = ["a", "d", "c", "a", "z", "g"];
-function SortArrAlpha(array) {
+function sortArrAlpha(array) {
    console.log(array);
    return array.sort();
    //return array.sort(function (a, b) {
@@ -106,7 +106,7 @@ function SortArrAlpha(array) {
 //Split a string into an Array Using the split Method
 //A1: The string is split and made into seperate strings with the \W character expression to define where to split the string
 //R: Returns an array with string in it with each word seperate
-function SpltStrArr(str) {
+function spltStrArr(str) {
    return str.split(/\W/);
 }
 
